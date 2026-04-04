@@ -1,0 +1,30 @@
+h1{
+    color: pink;
+}
+
+h2{
+    color: blue;
+}
+a {
+    color: green;
+}
+p{
+    color: orange;
+}
+
+li {
+    border: 1px solid black;
+    background-color: rgb(99, 99, 197);
+}
+
+
+td{
+    border: 3px solid;
+    color: black;
+    background-color: orange;
+}
+
+table{
+    background-color: orange;
+    border: 5px solid darkred;
+}
