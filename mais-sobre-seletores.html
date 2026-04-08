@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais sobre Seletores</title>
+    <style>
+        /*
+        SELETOR UNIVERSAL       
+        *{
+            border: 1px solid red;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            padding: 16px;
+            border: 1px solid purple;
+        }
+
+        h1 {
+            padding: 16px;
+        }
+        
+        SELETOR DE TEXTO
+        h1,p{
+            border: 1px solid red;
+        }
+         SELETOR DE CLASSE  
+         .destaque{
+            background-color: red;
+        }
+
+        p.titulo {
+            color: white;
+        }
+
+        h1.titulo {
+        background-color: red;
+        }
+
+        
+        
+
+            div#promocao{
+                background-color: purple;
+             }
+
+        span#promocao{
+            background-color: red;
+        }
+        */
+
+        h1{
+            color: green;
+        }
+        h1+p{
+            border-top: 2px solid gray;
+            padding: 10px;
+        }
+
+        p>a{
+            background-color: purple;
+            color: white;
+        }
+
+        .destaque{
+            color: purple;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>Título da página</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Corporis minus iusto ratione eos aliquid inventore nemo saepe 
+        qui error, dolore dicta suscipit consectetur. Eveniet soluta 
+        impedit est ipsum nihil dignissimos?<br>
+        <a href="">Leia mais</a>
+        <a href="">Gostei(10)</a>
+    </p>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Natus soluta, adipisci totam officia quo aperiam fugiat 
+        perspiciatis inventore. Soluta unde nulla inventore minus 
+        repellat pariatur explicabo quas commodi itaque rem!
+    </p>
+
+    <h2>Subtítulo da página</h2>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis quidem sit assumenda, natus doloremque odio expedita sequi vel quibusdam dolorem nostrum porro eaque velit, consequatur, quae officiis. Ut, accusantium mollitia.
+    </p>
+
+    <p class="destaque">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum sint fugit dolore excepturi iusto inventore distinctio dolorem accusantium, officiis mollitia qui amet ab labore quaerat blanditiis. Iusto, consequuntur debitis.
+    </p>
+
+</body>
+</html>
