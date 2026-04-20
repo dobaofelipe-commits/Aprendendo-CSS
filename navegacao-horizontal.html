@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menude navegação</title>
+
+    <style>
+
+        #menu ul{
+            list-style-type: none;
+            padding: 0;
+            width: 720px;
+            background-color: #24252a;
+            border: 1px solid red;
+            padding: 0.5em;
+        }
+
+        #menu ul::after{
+            content: " ";
+            clear: both;
+            display: table;
+        }
+
+        #menu li a{
+            display: block;
+            padding: 0.5em 1.5em;
+            color: white;
+            text-decoration: none; 
+            float: left;
+            margin: 0 0.5em;
+        }
+
+        #menu li a:hover{
+            background-color: #0582ac;
+            border-radius: 2.5em;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <h1>Menu de navegação</h1>
+    <div id="menu">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Carrinho</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+    </div>
+
+    <div>
+        <h2>Conteudo</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, illum? Sunt atque id quia iste perspiciatis modi cupiditate voluptates ex doloribus necessitatibus laudantium ipsam officia debitis, est esse corrupti deleniti.
+        </p>
+    </div>
+
+    
+</body>
+</html>
