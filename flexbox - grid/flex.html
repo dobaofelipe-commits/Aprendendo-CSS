@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+        h2{
+            color: white;
+        }
+
+        .container-flex{
+            border: 1px solid red;
+            display: flex;
+            height: 400px;
+            flex-direction: row;
+            justify-content: center;/* main axis*/
+            align-items: flex-start;/* Cross axis*/
+
+        }
+
+        .container-flex>div{
+            border: 4px solid white;
+            color: white;
+            padding: 4px;
+            margin: 4px;
+            font-size: 2rem;
+            flex-basis: 280px;
+            
+        }
+
+
+    .texto-grande{
+        font-size: 3rem;
+    }
+
+    .coluna{
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .item1, .item3{
+       /* flex-grow: 1;
+        flex-shrink: 2;
+        flex-grow: 2;
+        flex-basis:200px ;
+        flex-basis: 100%;*/
+        flex: 1 1 200px;
+    }
+
+    .item2, .item4{
+        /*flex-grow: 2;
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-basis:200px ;*/
+        flex: 2 2 200px; /* Grow, ,shrink, Basis, */
+        order: -1;
+    }
+     /*
+    .item {
+        align-self: flex-start;
+    }
+        */
+
+    </style>
+</head>
+<body>
+    
+    <h1>Alinham entos</h1>
+
+            <h2>Row</h2>
+        <div class="container-flex ">
+            <div class="item1">item teste01</div>
+            <div class="item2">item teste02</div>
+            <div class="item3">item teste03</div>
+            <div class="item4">item teste04</div>
+        </div>
+
+        <h2>Column</h2>
+        <div class="container-flex coluna">
+            <div class="item1">item teste01</div>
+            <div class="item2">item teste02</div>
+            <div class="item3">item teste03</div>
+            <div class="item4">04</div>
+        </div>
+</body>
+</html>
